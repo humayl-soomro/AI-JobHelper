@@ -68,6 +68,14 @@ const ResumeResults = ({results}) => {
       </div>
       <p className="text-center mt-1 font-medium">{match_score}%</p>
 
+      <div className="card bg-base-200 shadow-md rounded-xl p-6 flex items-center justify-center min-h-40 text-black-500 italic">
+               <h1 className="text-2xl font-bold mb-4">Suggestions</h1><ul>
+      {results.suggestions.map((tip, index) => (
+        <li key={index}>{tip}</li>
+      ))}
+    </ul>
+            </div>
+
       {/* Bar chart */}
       <div>
         <h3 className="text-xl font-semibold mb-2">Counts of Tags</h3>

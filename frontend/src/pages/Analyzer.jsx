@@ -109,10 +109,11 @@ const Analyzer = () => {
     <button type="submit" className="btn btn-primary w-full">Analyze</button>
   </form>
 
-  {/* Results Section */}
+  {/* Resume Results Section */}
   <div className="w-full max-w-xl">
-    {results ? (
+          {results ? (<div>
             <ResumeResults results={results} />
+          </div>
     ) : (
       <div className="card bg-base-200 shadow-md rounded-xl p-6 flex items-center justify-center h-40 text-gray-500 italic">
         Results will appear here

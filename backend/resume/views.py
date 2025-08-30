@@ -89,9 +89,8 @@ def get_results_from_ai(resume_text, job_description):
 
     prompt = f"""
     Compare the following resume and job description.
-    1. Return a skills match percentage.
-    2. List of matched skills.
-    3. List of missing skills.
+    1. List of matched skills.
+    2. List of missing skills.
     Output in strict JSON.
 
     Resume:
@@ -101,9 +100,8 @@ def get_results_from_ai(resume_text, job_description):
     {job_desc}
 
     Output should use these keys: 
-    1. match_score
     2. matched
-    3. missing
+    2. missing
     """
     completion = client.chat.completions.create(
         model=model,
@@ -132,7 +130,16 @@ def create_suggestions(result):
         suggestions.append(suggestion)
     # combine the result and suggestions
     return {**result, 'suggestions': suggestions}
-        
+
+def create_percent_match(result):
+    # Create percent match based on the result
+    total_skills = len(result['matched']) + len(result['missing'])
+    percent_match = (len(result['matched']) / total_skills) * 100
+    # round to 2 decimal places
+    percent_match = round(percent_match, 2)
+    # combine the result and percent match
+    return {**result, 'match_score': percent_match}
+
 
 class AnalyzeJobView(APIView):
     permission_classes = [permissions.IsAuthenticated]
@@ -163,4 +170,5 @@ class AnalyzeJobView(APIView):
         # convert result to JSON
         result = json.loads(result)
         result = create_suggestions(result)
+        result = create_percent_match(result)
         return Response(result, status=status.HTTP_200_OK)
