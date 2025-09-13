@@ -7,7 +7,6 @@ from rest_framework.views import APIView
 import pdfplumber
 import docx
 import os
-import spacy
 
 
 from rest_framework.response import Response

@@ -7,8 +7,8 @@ export default function Navbar() {
   return (
       <nav className="bg-gray-800 p-4 text-white flex justify-between">
       {access ? <Link to={"/"}>
-          <h1 className="text-2xl font-bold">Jobify</h1>
-      </Link> : <h1 className="text-2xl font-bold">Jobify</h1> }
+          <h1 className="text-2xl font-bold">JobSpot</h1>
+      </Link> : <h1 className="text-2xl font-bold">JobSpot</h1> }
       <div className="flex gap-4">
         {access && <Link to="/jobs">Jobs</Link>}
         {access && <Link to="/resume/analyze">Resume Analyze</Link>}

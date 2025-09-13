@@ -81,13 +81,13 @@ const Analyzer = () => {
       <label className="label">
         <span className="label-text font-medium">Job Description</span>
       </label>
-      <input
+      <textarea
         type="text"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         placeholder="Enter job description here"
         required
-        className="input input-bordered w-full"
+        className="textarea textarea-bordered w-full h-40"
       />
     </div>
 
@@ -133,7 +133,7 @@ const Analyzer = () => {
     <div
       key={resume.id}
       onClick={() => handleResumeSelect(resume)}
-      className="card relative cursor-pointer rounded-xl border-2 border-transparent overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
+      className="card relative cursor-pointer rounded-xl border-2 border-transparent overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl group active:scale-95"
     >
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 opacity-80 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>

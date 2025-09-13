@@ -91,3 +91,17 @@ yarn-error.log*
 
 # Production static files collected by Django
 backend/staticfiles/
+
+.env
+backend/.env
+frontend/.env
+*.sqlite3
+__pycache__/
+*.pyc
+db.json
+media/
+staticfiles/
+venv/
+node_modules/
+.DS_Store
+Sample resumes and job description
