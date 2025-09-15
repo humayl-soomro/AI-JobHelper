@@ -4,6 +4,10 @@ An AI-powered web app to **track job applications** and **analyze resumes vs. jo
 This project helps job seekers **stay organized**, **optimize their resumes**, and **land more interviews**.  
 
 ---
+## ▶️ Video Demo
+[Click here for the demo video on Vimeo](https://vimeo.com/1118745188)
+
+---
 
 ## 🔧 Features (MVP)
 
