@@ -27,4 +27,4 @@ RUN adduser --disabled-password --gecos '' myuser
 USER myuser
 
 # The command to run when the container starts (can be overridden by docker-compose)
-CMD ["sh", "-c", "python manage.py migrate --noinput && python manage.py collectstatic --noinput && gunicorn config.wsgi:application --bind 0.0.0.0:10000"]
+CMD ["sh", "-c", "python manage.py migrate --noinput && gunicorn config.wsgi:application --bind 0.0.0.0:10000"]
