@@ -1,3 +1,5 @@
+>### 📢 **Note:** This project is currently in the deployment phase. A functional live demo will be available soon. Thank you.
+---
 # 🚀 AI Job Tracker + Resume Analyzer
 
 An AI-powered web app to **track job applications** and **analyze resumes vs. job descriptions**.  
