@@ -1,7 +1,7 @@
 >### **Note from the Developer:**  
 > This project was built as a **learning experiment** while exploring full-stack development (React, Django, and AI integration).  
 > It was developed quickly to practice key concepts, **not as a polished production app**, but it’s fully functional and represents my hands-on learning process.  
-> I’m currently improving my design, scalability, and code architecture skills for future projects.
+> I’m continuously improving my design, scalability, and code architecture skills for future projects.
 >#### 📢 **Further Note:** This project is currently in the deployment phase. A functional live demo will be available soon. Thank you.
 ---
 # 🚀 AI Job Tracker + Resume Analyzer
