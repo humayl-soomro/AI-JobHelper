@@ -7,7 +7,7 @@ This project helps job seekers **stay organized**, **optimize their resumes**, a
 
 ---
 ## ▶️ Video Demo
-[Click here for the demo video on Vimeo](https://vimeo.com/1118745188)
+[Click here for the demo video on Vimeo](https://vimeo.com/1130507046?fl=ip&fe=ec)
 
 ---
 
