@@ -1,4 +1,8 @@
->### 📢 **Note:** This project is currently in the deployment phase. A functional live demo will be available soon. Thank you.
+>### **Note from the Developer:**  
+> This project was built as a **learning experiment** while exploring full-stack development (React, Django, and AI integration).  
+> It was developed quickly to practice key concepts, **not as a polished production app**, but it’s fully functional and represents my hands-on learning process.  
+> I’m currently improving my design, scalability, and code architecture skills for future projects.
+>#### 📢 **Further Note:** This project is currently in the deployment phase. A functional live demo will be available soon. Thank you.
 ---
 # 🚀 AI Job Tracker + Resume Analyzer
 
@@ -152,15 +156,25 @@ Frontend will run on http://localhost:5173 and backend on http://127.0.0.1:8000.
 - SECRET_KEY=your_django_secret
 - DEBUG=True
 - DATABASE_URL=postgres://user:password@localhost:5432/jobtracker
-- GROQ_TOKEN=your_huggingface_token
+- GROQ_TOKEN=your_qroq_token
 
 ## 📸 Screenshots
 To Add
 
+## 🧭 Reflections & Next Steps
+
+This project helped me strengthen my understanding of:
+- Building REST APIs with Django REST Framework  
+- Handling authentication and JWT tokens  
+- Integrating AI models for NLP tasks  
+- Connecting React frontend with a Django backend  
+
+**What I’d improve next:**
+- Better frontend state management and UX design  
+- Implementing unit & integration testing  
+- More robust deployment pipeline with Docker + CI/CD  
+- Refactoring for scalability and maintainability
+
+
 ## 📜 License
 MIT License © Humayl Soomro
-
-## 💡 Next Steps
-- Add Docker setup for easy deployment
-- Deploy on live servers
-- Improve the UI and add more features
